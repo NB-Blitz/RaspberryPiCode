@@ -158,7 +158,7 @@ int main()
 
             //value = (x - w/2) / (w/2)
             double value = ((1.0*largestPosition.x) - (1.0*cameraCenter.x)) / (1.0*cameraCenter.x);
-            putText(contourDrawing, to_string(value), cameraCenter, FONT_HERSHEY_SIMPLEX, 1, Scalar(255,0,0), 2);
+            putText(contourDrawing, to_string(value), Point(0, 25), FONT_HERSHEY_SIMPLEX, 1, Scalar(255,0,0), 2);
             xEntry.SetDouble(value);
             cvSource.PutFrame(contourDrawing);
         }
